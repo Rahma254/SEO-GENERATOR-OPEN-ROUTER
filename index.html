@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- META SEO SUPER -->
+    <title>Nabila Ahmad Studio - Platform Kreasi AI & Jasa Digital</title>
+    <meta name="description" content="Platform kreasi AI canggih dari Nabila Ahmad Studio. Hasilkan novel, ramalan cinta & karir, puisi, dan lirik lagu dengan kekuatan AI. Kami juga menyediakan jasa pembuatan website dan script profesional.">
+    <meta name="keywords" content="Nabila Ahmad, studio novel, generator AI, ramalan AI, generator puisi, generator lirik, jasa pembuatan website, script, jakarta barat">
+    <link rel="canonical" href="https://your-domain.com/"> <!-- Ganti dengan domain Anda nanti -->
+
+    <!-- META Open Graph (Untuk Sharing di Media Sosial) -->
+    <meta property="og:title" content="Nabila Ahmad Studio - Platform Kreasi AI & Jasa Digital">
+    <meta property="og:description" content="Hasilkan novel, ramalan, puisi, dan lirik lagu dengan kekuatan AI. Temukan juga jasa digital kami.">
+    <meta property="og:image" content="https://your-domain.com/og-image.jpg"> <!-- Ganti dengan URL gambar preview Anda -->
+    <meta property="og:url" content="https://your-domain.com/">
+    <meta property="og:type" content="website">
+
+    <!-- FONT & ICONS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- LEAFLET CSS (Untuk Peta) -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    
+    <!-- CSS UTAMA -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- SCHEMA.ORG JSON-LD (Untuk Google Rich Snippets) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Nabila Ahmad Studio",
+      "url": "https://your-domain.com/",
+      "logo": "https://your-domain.com/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+62-858-1052-6151",
+        "contactType": "Customer Service"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jl Jaya Raya RT.005/009",
+        "addressLocality": "Cengkareng Barat",
+        "addressRegion": "Jakarta Barat",
+        "addressCountry": "ID"
+      }
+    }
+    </script>
+</head>
+<body>
+
+    <!-- NOTIFIKASI BERJALAN -->
+    <div class="marquee-container">
+        <div class="marquee-content">
+            <p>
+                ✨ Selamat Datang di Nabila Ahmad Studio! ✨ Platform kreasi konten AI terdepan. Butuh bantuan? WhatsApp Admin: 085810526151. Menerima jasa Pembuatan Website 🙄 dan Script dll.    
+            </p>
+            <p>
+                ✨ Selamat Datang di Nabila Ahmad Studio! ✨ Platform kreasi konten AI terdepan. Butuh bantuan? WhatsApp Admin: 085810526151. Menerima jasa Pembuatan Website 🙄 dan Script dll.    
+            </p>
+        </div>
+    </div>
+
+    <div id="app-container">
+        <!-- Panel Navigasi (Dulu Control Panel) -->
+        <aside id="nav-panel">
+            <div class="logo">
+                Nabila Ahmad
+                <span>Creative AI Suite</span>
+            </div>
+            <nav class="main-nav">
+                <a href="#studio-novel" class="nav-link active"><i class="fa-solid fa-book-open"></i> Studio Novel</a>
+                <a href="#ramalan-ai" class="nav-link"><i class="fa-solid fa-wand-magic-sparkles"></i> Ramalan AI</a>
+                <a href="#generator-lirik" class="nav-link"><i class="fa-solid fa-music"></i> Generator Lirik/Puisi</a>
+                <a href="#lokasi" class="nav-link"><i class="fa-solid fa-map-location-dot"></i> Lokasi Kami</a>
+            </nav>
+            <div class="footer-info">
+                © 2024 Nabila Ahmad Studio
+            </div>
+        </aside>
+
+        <!-- Area Konten Utama -->
+        <main id="main-content-area">
+
+            <!-- 1. STUDIO NOVEL -->
+            <section id="studio-novel" class="content-panel active">
+                <div class="panel-controls">
+                    <h3><i class="fa-solid fa-book-open"></i> Studio Novel</h3>
+                    <div class="control-group">
+                        <label for="novel-title">Judul Novel</label>
+                        <input type="text" id="novel-title" placeholder="Cahaya di Ujung Senja">
+                    </div>
+                    <div class="control-group">
+                        <label for="novel-synopsis">Sinopsis / Premis</label>
+                        <textarea id="novel-synopsis" placeholder="Seorang pelukis yang kehilangan kemampuannya melihat warna..."></textarea>
+                    </div>
+                    <div class="control-group">
+                        <label for="novel-genre">Genre & Gaya</label>
+                        <input type="text" id="novel-genre" placeholder="Fantasi Romantis, gaya puitis dan deskriptif">
+                    </div>
+                    <button id="generate-novel-btn" class="main-button">Buat Bab Selanjutnya</button>
+                </div>
+                <div class="panel-display">
+                    <div id="novel-content">
+                        <!-- Bab-bab novel akan muncul di sini -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. RAMALAN AI -->
+            <section id="ramalan-ai" class="content-panel">
+                <div class="panel-controls">
+                    <h3><i class="fa-solid fa-wand-magic-sparkles"></i> Ramalan Cinta & Karir</h3>
+                     <div class="control-group">
+                        <label for="ramalan-nama">Nama Anda</label>
+                        <input type="text" id="ramalan-nama" placeholder="Contoh: Budi Santoso">
+                    </div>
+                    <div class="control-group">
+                        <label for="ramalan-info">Pertanyaan / Fokus (Opsional)</label>
+                        <textarea id="ramalan-info" placeholder="Saya ingin tahu tentang perkembangan karir saya tahun ini dan bagaimana dengan hubungan asmara saya."></textarea>
+                    </div>
+                    <button id="generate-ramalan-btn" class="main-button">Dapatkan Ramalan</button>
+                </div>
+                <div class="panel-display">
+                    <div id="ramalan-content" class="ai-generated-content">
+                        <div class="placeholder-text">Hasil ramalan Anda akan muncul di sini...</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. GENERATOR LIRIK/PUISI -->
+            <section id="generator-lirik" class="content-panel">
+                 <div class="panel-controls">
+                    <h3><i class="fa-solid fa-music"></i> Generator Lirik & Puisi</h3>
+                     <div class="control-group">
+                        <label for="puisi-tipe">Tipe Konten</label>
+                        <select id="puisi-tipe">
+                            <option value="Puisi">Puisi</option>
+                            <option value="Lirik Lagu">Lirik Lagu</option>
+                        </select>
+                    </div>
+                     <div class="control-group">
+                        <label for="puisi-tema">Tema / Topik</label>
+                        <input type="text" id="puisi-tema" placeholder="Hujan di sore hari, kehilangan, harapan baru">
+                    </div>
+                    <div class="control-group">
+                        <label for="puisi-mood">Suasana / Mood</label>
+                        <input type="text" id="puisi-mood" placeholder="Melankolis, gembira, penuh semangat, misterius">
+                    </div>
+                    <button id="generate-puisi-btn" class="main-button">Buat Karya Seni</button>
+                </div>
+                <div class="panel-display">
+                    <div id="puisi-content" class="ai-generated-content">
+                        <div class="placeholder-text">Puisi atau lirik lagu Anda akan muncul di sini...</div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- 4. LOKASI KAMI -->
+            <section id="lokasi" class="content-panel">
+                <div class="panel-full">
+                    <h3><i class="fa-solid fa-map-location-dot"></i> Lokasi Kami</h3>
+                    <p>Temukan kantor fisik kami di Jakarta Barat. Silakan buat janji temu melalui WhatsApp sebelum berkunjung.</p>
+                    <div id="map"></div>
+                    <div class="address-box">
+                        <strong>Nabila Ahmad Studio</strong><br>
+                        Jl Jaya Raya RT.005/009, Cengkareng Barat<br>
+                        Jakarta Barat, Indonesia
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Loader Overlay Universal -->
+    <div id="loader">
+        <div class="spinner"></div>
+        <p id="loader-text">AI sedang merangkai kata... Mohon tunggu.</p>
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="script.js"></script>
+</body>
+</html>
